@@ -1,4 +1,4 @@
-(function ($) {
+document.addEventListener("DOMContentLoaded", function (event) {
     "use strict";
 
     /*--
@@ -89,7 +89,7 @@
     /*--
         Off Canvas Function
     -----------------------------------*/
-    (function () {
+    $(document).ready(function (e) {
         var $offCanvasToggle = $('.offcanvas-toggle'),
             $offCanvas = $('.offcanvas'),
             $offCanvasOverlay = $('.offcanvas-overlay'),
@@ -112,14 +112,14 @@
             $offCanvasOverlay.fadeOut();
             $mobileMenuToggle.find('a').removeClass('close');
         });
-    })();
+    })
 
     /*--
         Off Canvas Menu
     -----------------------------------*/
-    function mobileOffCanvasMenu() {
+    $(document).ready(function (e) {
         var $offCanvasNav = $('.offcanvas-menu, .overlay-menu'),
-            $offCanvasNavSubMenu = $offCanvasNav.find('.sub-menu');
+        $offCanvasNavSubMenu = $offCanvasNav.find('.sub-menu');
 
         /*Add Toggle Button With Off Canvas Sub Menu*/
         $offCanvasNavSubMenu.parent().prepend('<span class="menu-expand"></span>');
@@ -142,8 +142,7 @@
                 }
             }
         });
-    }
-    mobileOffCanvasMenu();
+    })
 
     /*--
         Header Category
@@ -890,4 +889,4 @@
         subMenuMegaMenuAlignment();
     });
 
-})(jQuery);
+})
