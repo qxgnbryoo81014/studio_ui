@@ -1,13 +1,19 @@
 // import logo from './logo.svg';
 import { Route, Routes, Link } from 'react-router-dom';
-import React, { lazy, Suspense } from 'react';
+// import React, { lazy, Suspense } from 'react';
+import React, { Suspense } from 'react';
+import Footer from './components/Footer/Footer';
+
+import TestPage from './containers/account/TestPage';
 
 // import './main';
 
 import Home from './containers/Home';
 import Layout from './containers/Layout';
 // import LoginFooter from './components/test';
-const TestPage = lazy(() => import('./containers/account/TestPage'));
+
+// const TestPage = lazy(() => import('./containers/account/TestPage'));
+
 const App = props => {
   // const URL = process.env.REACT_APP_URL;
   // console.log("URL:"+URL);
@@ -25,8 +31,8 @@ const App = props => {
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/lalalu" element={<TestPage />} />
             <Route path="/about" element={<About />} />
+            <Route path="/lalalu" element={<TestPage />} />
           </Routes>
         </Layout>
       </Suspense>
@@ -60,6 +66,7 @@ function About() {
       <nav>
         <Link to="/">Home</Link>
       </nav>
+      <Footer version={2}/>
     </>
   );
 }

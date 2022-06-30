@@ -3,6 +3,7 @@
 import React, { Fragment } from 'react';
 
 import TopNav from '../components/Navigation/TopNav';
+// import Footer from '../components/Footer/Footer';
 // import SideNav from '../components/Navigation/SideNav';
 // import Footer from '../components/Footer/Footer';
 // import ActiveContext from '../context/ActiveContext';
@@ -19,18 +20,16 @@ const Layout = props => {
         </div> */}
         <TopNav showOptions={true}/>
         
-        <div className="container-fluid">
+        {/* <div className="container-fluid"> container-fluid 左右會padding */}
+        <div>
             <div className="container-box">
-                <div id="menu_mwt1">
-                    {/* <SideNav /> */}
-                </div>
 
-                <div id="menu_mwt2">
+                <div>
                     {/* menu_a1 and menu_a2 are SideNav togglers. 本來就有的註解*/} 
-                    <div id="menu_a1"></div>
-                    <div id="menu_a2"></div>
 
-                    <div className="by-component">
+                    {/* <div className="by-component"> */}
+                    <div>
+                        {/* <h3 style={{color:"blue"}}>props children</h3> */}
                         {props.children}
                     </div>
                     
@@ -38,6 +37,7 @@ const Layout = props => {
             </div>            
             {/* <Footer /> */}
         </div>
+        {/* <Footer version={2}/> */}
     </Fragment>
 );}
 

@@ -36,10 +36,6 @@ const TopNav = props => {
     // 	return <span> {minutes}:{seconds}</span>;
     // };
 
-    // 額外處理沒資料要不要 offcanvas
-    // if (props.xxx) {
-    // }
-
     topNavOptions = (
         <div className="header-section section bg-white d-none d-xl-block">
             <div className="container">
@@ -214,35 +210,6 @@ const TopNav = props => {
         </div>
     );
 
-    // ($) => {
-    //     // var $window = $(window),
-    //     var $body = $('body');
-
-    //         var $offCanvasToggle = $('.offcanvas-toggle'),
-    //         $offCanvas = $('.offcanvas'),
-    //         $offCanvasOverlay = $('.offcanvas-overlay'),
-    //         $mobileMenuToggle = $('.mobile-menu-toggle');
-    //     $offCanvasToggle.on('click', function (e) {
-    //         console.log("wtf?");
-    //         e.preventDefault();
-    //         var $this = $(this),
-    //             $target = $this.attr('href');
-    //         $body.addClass('offcanvas-open');
-    //         $($target).addClass('offcanvas-open');
-    //         $offCanvasOverlay.fadeIn();
-    //         if ($this.parent().hasClass('mobile-menu-toggle')) {
-    //             $this.addClass('close');
-    //         }
-    //     });
-    //     $('.offcanvas-close, .offcanvas-overlay').on('click', function (e) {
-    //         e.preventDefault();
-    //         $body.removeClass('offcanvas-open');
-    //         $offCanvas.removeClass('offcanvas-open');
-    //         $offCanvasOverlay.fadeOut();
-    //         $mobileMenuToggle.find('a').removeClass('close');
-    //     });
-    // };
-
     cart = (
         <div id="offcanvas-cart" className="offcanvas offcanvas-cart">
             <div className="inner">
@@ -327,7 +294,7 @@ const TopNav = props => {
                 <div className="offcanvas-menu">
                     <ul>
                         {/* <li><a href="#"><span className="menu-text">商品專區</span></a> */}
-                        <li><a href="#"><span className="menu-text">商品專區</span></a>
+                        <li><a href="https://aws.amazon.com/tw/"><span className="menu-text">商品專區</span></a>
                             <ul className="sub-menu">
                                 <li><a href="https://aws.amazon.com/tw/"><span className="menu-text">全部商品</span></a></li>
                                 <li><a href="https://aws.amazon.com/tw/"><span className="menu-text">手繪瓷盤</span></a></li>

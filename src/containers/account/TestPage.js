@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 // import { useForm, Controller } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import { URL } from '../../constants';
+import Footer from '../../components/Footer/Footer';
 // import React, { useState, useEffect, useCallback, lazy, Suspense } from 'react';
 
 // const pageList = [
@@ -12,13 +13,14 @@ import { URL } from '../../constants';
 const TestPage = props => {
     console.log("URL:"+URL);
     return (
-        <Fragment>
-            <div><h1>hello wtf</h1></div>
+        <>
+            <div><h1>hello</h1></div>
             
             <nav>
                 <Link to="/about">About</Link>
             </nav>
-        </Fragment>
+            <Footer version={2}/>
+        </>
     );
 }
 
