@@ -81,7 +81,7 @@ const TopNav = props => {
                         <div className="header-tools justify-content-end">
                             <div className="header-login">
                                 {/* <a href="login-register.html"><i className="fal fa-user"></i></a> */}
-                                <a href="https://aws.amazon.com/tw/"><i className="fal fa-user"></i></a>
+                                <a href="/loginRegister"><i className="fal fa-user"></i></a>
                             </div>
 
                             <div className="header-wishlist">
@@ -139,7 +139,7 @@ const TopNav = props => {
                     <div className="col-auto">
                         <div className="header-tools justify-content-end">
                             <div className="header-login">
-                                <a href="login-register.html"><i className="fal fa-user"></i></a>
+                                <a href="/loginRegister"><i className="fal fa-user"></i></a>
                             </div>
 
                             <div className="header-wishlist">
@@ -256,7 +256,7 @@ const TopNav = props => {
                                 <a href="https://aws.amazon.com/tw/"><i className="fal fa-user"></i></a>
                             </div>
                             <div className="header-search d-none d-sm-block">
-                                <a href="#offcanvas-search" className="offcanvas-toggle"><i className="fal fa-search"></i></a>
+                                <a href="/loginRegister" className="offcanvas-toggle"><i className="fal fa-search"></i></a>
                             </div>
                             <div className="header-wishlist d-none d-sm-block">
                                 <a href="#offcanvas-wishlist" className="offcanvas-toggle"><span className="wishlist-count">0</span><i className="fal fa-heart"></i></a>
@@ -325,7 +325,7 @@ const TopNav = props => {
                     <div className="header-tools">
                         <div className="header-login">
                             {/* <a href="login-register.html"><i className="fal fa-user"></i></a> */}
-                            <a href="https://aws.amazon.com/tw/"><i className="fal fa-user"></i></a>
+                            <a href="/loginRegister"><i className="fal fa-user"></i></a>
                         </div>
                         <div className="header-wishlist">
                             {/* <a href="wishlist.html"><span>0</span><i className="fal fa-heart"></i></a> */}

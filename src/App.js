@@ -5,6 +5,7 @@ import React, { Suspense } from 'react';
 import Footer from './components/Footer/Footer';
 
 import TestPage from './containers/account/TestPage';
+import LoginRegister from './components/Login/loginRegister';
 
 // import './main';
 
@@ -31,6 +32,7 @@ const App = props => {
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/loginRegister" element={<LoginRegister/>} />
             <Route path="/about" element={<About />} />
             <Route path="/lalalu" element={<TestPage />} />
           </Routes>
