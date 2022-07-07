@@ -42,7 +42,7 @@ const TopNav = props => {
                 <div className="row row-cols-lg-3 align-items-center">
                     <div className="col">
                         <div className="header-logo">
-                            <a href="/lalalu"><img src="/images/web logo1.png" alt="studio4art Logo" /></a>
+                            <a href="/"><img src="/images/web logo1.png" alt="studio4art Logo" /></a>
                         </div>
                     </div>
                     <div className="col">

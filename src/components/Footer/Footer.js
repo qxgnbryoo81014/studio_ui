@@ -88,7 +88,6 @@ const Footer = props => {
             </div>
         </div>
 
-
     )
 
     copyright = (
