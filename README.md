@@ -1,2 +1,4 @@
+# Download https://nodejs.org/zh-tw/download/
 * setp1 - npm install
-* step2 - npm start
+* setp2 - npm i swiper
+* step3 - npm start
